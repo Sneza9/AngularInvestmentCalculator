@@ -1,1 +1,23 @@
-<p>user-input works!</p>
+<form (ngSubmit)="onSubmit()">
+  <div class="input-group">
+    <p>
+      <label for="initialInvestment">INITIAL INVESTMENT</label>
+      <input type="number" id="initialInvestment" name="initialInvestment" [(ngModel)]="initialInvestmentProperty"/>
+    </p>
+    <p>
+      <label for="annualInvestment">ANNUAL INVESTMENT</label>
+      <input type="number" id="annualInvestment" name="annualInvestment" [(ngModel)]="annualInvestmentProperty"/>
+    </p>
+  </div>
+  <div class="input-group">
+    <p>
+      <label for="expectedReturn">EXPECTED RETURN</label>
+      <input type="number" id="expectedReturn" name="expectedReturn" [(ngModel)]="expectedReturnProperty"/>
+    </p>
+    <p>
+      <label for="duration">DURATION</label>
+      <input type="number" id="duration" name="duration" [(ngModel)]="durationProperty"/>
+    </p>
+  </div>
+  <button type="submit">CALCULATE</button>
+</form>
