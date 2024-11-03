@@ -1,5 +1,6 @@
 <!-- Ukoliko nemamo podataka u results  -->
-@if(!results){
+@if(!results()){
+<!-- @if(!results){ -->
 <p class="center">Please enter some values and press "Calculate"</p>
 <!-- <p *ngIf="!results">Please enter some values and press "Calculate"</p>  -->
 } @else {
@@ -16,7 +17,8 @@
   <tbody>
     <!-- Upisacemo dinamicki jer ne znamo koliko godina nam treba da se prikazu  -->
 
-    @for (result of results; track result.year) {
+    @for (result of results(); track result.year) {
+    <!-- @for (result of results; track result.year) { -->
     <tr>
       <td>{{ result.year }}</td>
       <td>{{ result.valueEndOfYear | currency : "USD" }}</td>

@@ -34,6 +34,10 @@ export class UserInputComponent {
       annInv:+this.annualInvestmentProperty,
       expRet:+this.expectedReturnProperty,
       dur:+this.durationProperty
-    })
+    });
+    this.initialInvestmentProperty='10';
+    this.annualInvestmentProperty='15';
+    this.expectedReturnProperty='50';
+    this.durationProperty='20';
   }
 }
