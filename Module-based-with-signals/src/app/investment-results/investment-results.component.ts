@@ -1,17 +1,18 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import type { resultInput } from '../result-input.model';
 // Import for pipe 
 import { CurrencyPipe } from '@angular/common';
 
 
-type resultInput = {
-  year: number;
-  interest: number;
-  valueEndOfYear: number;
-  annualInvestment: number;
-  totalInterest: number;
-  totalAmountInvested: number;
-};
+// type resultInput = {
+//   year: number;
+//   interest: number;
+//   valueEndOfYear: number;
+//   annualInvestment: number;
+//   totalInterest: number;
+//   totalAmountInvested: number;
+// };
 
 @Component({
   selector: 'app-investment-results',
